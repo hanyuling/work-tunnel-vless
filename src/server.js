@@ -18,7 +18,7 @@ async function main() {
     monitorMemoryUsage();
 
     const UUID = getEnvVariable("UUID", isValidUUID);
-    const PORT = getEnvVariable("PORT", isValidPort, "3000");
+    const PORT = getEnvVariable("PORT", isValidPort, "8080");
     const TUNNEL_DOMAIN = getEnvVariable("TUNNEL_DOMAIN", isValidDomain);
     const NAME = process.env.NAME || os.hostname();
     const VLESS_PATH_PREFIX = process.env.VLESS_PATH_PREFIX || "/work-tunnel-";
